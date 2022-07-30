@@ -8,20 +8,25 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+    <div id="start-screen">
+        <button id="stBtn">Start Game</button>
+    </div>
     <div id="game-container">
         <img id="road" src="./assets/road.jpg">
         <img id="phil" src="./assets/phil.png">
         <img id="obstacle" src="./assets/bomb.png">
+        <img id="explosion" src="./assets/explosion.png">
         <h1>SCORE:</h1>
         <div class="score">
             <h2>0</h2>
         </div>
     </div>
-    <video id ="my_video"controls autoplay muted>
-        <source src="./assets/BadToTheBones.mp4"
-        type="video/mp4">
-    </video>
-    <button id="mutebtn">Mute</button>
+    <audio id="audio" hidden>
+        <source src="./assets/soundtrack.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="audio2" hidden>
+        <source src="./assets/hq-explosion-6288.mp3" type="audio/mpeg">
+    </audio>
     <script src="./script.js"></script>
 </body>
 </html
