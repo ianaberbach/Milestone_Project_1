@@ -1,0 +1,22 @@
+{
+  "name": "milestone_project_1",
+  "version": "1.0.0",
+  "description": "Simple sidescroller where Phil escapes after being bad to the bone.\r Click Start Button to Start Game.\r Features to be added:  Restart button, highscore, different obstacle model, explosion animation on death, and tweaking hit detection to be slightly more accurate.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianaberbach/Milestone_Project_1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ianaberbach/Milestone_Project_1/issues"
+  },
+  "homepage": "https://github.com/ianaberbach/Milestone_Project_1#readme",
+  "dependencies": {
+    "sass": "^1.57.0"
+  }
+}

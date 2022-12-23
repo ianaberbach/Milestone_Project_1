@@ -1,0 +1,11 @@
+@function double1($px1) {
+    @return $px1 * 2;
+}
+
+@function double2($px2){
+    @return $px2 * 2;
+}
+
+@function double3($px3){
+    @return $px3 * 2;
+}

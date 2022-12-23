@@ -1,0 +1,33 @@
+.explode{
+    animation: splode;
+}
+
+@keyframes splode{
+    0%{display: none}
+    100%{top: 475px;}
+    100%{left: 170px;}
+    100%{position: relative;}
+    100%{width: 400px;}
+    100%{height: 400px;}
+}
+
+.animate{
+    animation: jump 500ms;
+}
+
+@keyframes jump {
+    0%{top: 475px;}
+    30%{top: 380px;}
+    55%{top: 380px;}
+    100%{top: 475px;}
+}
+
+.animate2{
+    animation: start 1s infinite linear;
+}
+
+
+@keyframes start{
+    0%{left: 1900px}
+    100%{left: -700px}
+}

@@ -1,0 +1,76 @@
+@mixin start{
+    @if $bgC == #00FF00{
+        background-color: #00FF00;
+    }@else{
+    background-color: #023020;
+    }
+            border-radius: 10px;
+            border: $bborder;
+            position: $position2;
+            left: double2($px2);
+            top: double1($px1);
+            display: inline-block;
+            font-size: $px3;
+            z-index: 0;
+}
+
+@mixin container{
+    width: 1900px;
+    height: double2($px2);
+    @if $bborder == #000000 solid 1px{
+        border: $bborder;
+    }@else{
+    border: #000001 solid 1px;
+    }
+    border: 1px solid black;
+        #road{
+            width: 1880px;
+            height: double2($px2);
+            position: $position2;
+            top: $px4;
+            z-index: -1;
+        }
+        #phil{
+            width: $px2;
+            height: $px2;
+            position: $position1;
+            top: 475px;
+            left: 170px;
+        }
+        #obstacle{
+            width: double3($px3);
+            height: double3($px3);
+            background-color: black;
+            position: $position1;
+            top: $px2;
+            left: 1900px;
+        }
+        #explosion{
+            display: none;
+        } 
+}
+
+@mixin s1{
+    margin: auto;
+        width: 10%;
+        border: $bborder2;
+        padding: 10px;
+        position: $position2;
+        top: $px4;
+        left: double2($px2);
+}
+
+@mixin s2{
+    margin: auto;
+        width: 5%;
+        border: $bborder2;
+        padding: 10px;
+        position: $position2;
+        top: 160px;
+        left: double2($px2);
+}
+
+*{
+    padding: $px5;
+    margin: $px5;
+}

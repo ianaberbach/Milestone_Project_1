@@ -1,0 +1,22 @@
+@import "_vars";
+@import "_mixins";
+@import "_functions";
+
+body{
+    #start-screen{
+        #stBtn{
+            @include start;
+        }
+    }
+    #game-container{
+        @include container;
+    }
+    h1{
+        @include s1;
+    }   
+    h2{
+        @include s2;
+    }  
+}
+
+@import "_animations";

@@ -1,0 +1,122 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body #start-screen #stBtn {
+  background-color: #00FF00;
+  border-radius: 10px;
+  border: #000000 solid 1px;
+  position: absolute;
+  left: 800px;
+  top: 400px;
+  display: inline-block;
+  font-size: 40px;
+  z-index: 0;
+}
+body #game-container {
+  width: 1900px;
+  height: 800px;
+  border: #000000 solid 1px;
+  border: 1px solid black;
+}
+body #game-container #road {
+  width: 1880px;
+  height: 800px;
+  position: absolute;
+  top: 100px;
+  z-index: -1;
+}
+body #game-container #phil {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  top: 475px;
+  left: 170px;
+}
+body #game-container #obstacle {
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  position: relative;
+  top: 400px;
+  left: 1900px;
+}
+body #game-container #explosion {
+  display: none;
+}
+body h1 {
+  margin: auto;
+  width: 10%;
+  border: 3px solid black;
+  padding: 10px;
+  position: absolute;
+  top: 100px;
+  left: 800px;
+}
+body h2 {
+  margin: auto;
+  width: 5%;
+  border: 3px solid black;
+  padding: 10px;
+  position: absolute;
+  top: 160px;
+  left: 800px;
+}
+
+.explode {
+  animation: splode;
+}
+
+@keyframes splode {
+  0% {
+    display: none;
+  }
+  100% {
+    top: 475px;
+  }
+  100% {
+    left: 170px;
+  }
+  100% {
+    position: relative;
+  }
+  100% {
+    width: 400px;
+  }
+  100% {
+    height: 400px;
+  }
+}
+.animate {
+  animation: jump 500ms;
+}
+
+@keyframes jump {
+  0% {
+    top: 475px;
+  }
+  30% {
+    top: 380px;
+  }
+  55% {
+    top: 380px;
+  }
+  100% {
+    top: 475px;
+  }
+}
+.animate2 {
+  animation: start 1s infinite linear;
+}
+
+@keyframes start {
+  0% {
+    left: 1900px;
+  }
+  100% {
+    left: -700px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
